@@ -1,0 +1,5 @@
+{
+  "apikey": "<your-api-key>",
+  "version": "2018-05-01",
+  "url": "https://gateway-fra.watsonplatform.net/language-translator/api"
+}
