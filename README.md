@@ -24,12 +24,12 @@ Create the Cloud Functions Actions
 
 detect-language:
 ```
-ibmcloud fn action update hrt-demo/detect-language --docker <dockerhub-repo>/cloud-functions-ai-translator:v1 src/detect-language.js --param-file config/ai-params.json --web true
+ibmcloud fn action update hrt-demo/detect-language --kind nodejs:default src/detect-language.js --param-file config/ai-params.json --web true
 ```
 
 translate:
 ```
-ibmcloud fn action update hrt-demo/translate --docker ibmarc/cloud-functions-ai-translator:latest src/translate.js -P config/ai-params.json --web true
+ibmcloud fn action update hrt-demo/translate --kind nodejs:default src/translate.js -P config/ai-params.json --web true
 ```
 
 Create a sequence to bind pipe both actions together:
